@@ -17,9 +17,10 @@ _A template that follows lesson 8(MSTest Configuration Quickj Reference)_
 * _Clone github repo: https://github.com/Gabeaya/C--Template.git_
 * _Navigate the directory: (cd top name directory)_
 * _Open in Vs code: code ._
-* _Navigate to the ProjectName.Tests within the terminal: cd ProjectName.Tests_
-* _Run: dotnet restore_
-* _The line above will create your obj directories._
+* _Run: dotnet restore Bakery.Tests_
+* _The line above will install our csproj packages._
+* _Run: dotnet build Bakery_
+* _The line above will compile and create obj and bin directories._
 
 ## License :clipboard:
 MIT &copy; 2021 _Gabriel Ayala_
