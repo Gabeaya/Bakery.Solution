@@ -38,7 +38,7 @@ namespace Bakery.Models
     {
       if(Amount >2)
       {
-        Price = ((Amount /3)*5);
+        Price = ((Amount / 3) * 5) + ((Amount % 3)*2);
         return Price;
       }
       Price = Amount * 2;
