@@ -73,5 +73,13 @@ namespace Bakery.Tests
       Assert.AreEqual(2, newPastry.SetPrice());
     }
 
+    [TestMethod]
+    public void SetPrice_SetPriceGivenThePastryDiscount_Int()
+    {
+      int pastryCount = 3;
+      Pastry newPastry = new Pastry(pastryCount);
+      newPastry.SetPrice();
+      Assert.AreEqual(5, newPastry.SetPrice());
+    }
   }
 }
