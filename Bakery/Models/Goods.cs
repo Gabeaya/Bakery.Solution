@@ -34,5 +34,10 @@ namespace Bakery.Models
       Amount = amount;
       Price = price;
     }
+    public int SetPrice()
+    {
+      Price = Amount * 2;
+      return Price;
+    }
   }
 }
