@@ -21,5 +21,14 @@ namespace Bakery.Tests
       Bread newBread = new Bread(breadCount);
       Assert.AreEqual(1, newBread.Amount);
     }
+
+    [TestMethod]
+    public void SetPrice_SetPriceGivenTheAmountOfBread_Int()
+    {
+      int breadCount = 1;
+      Bread newBread = new Bread(breadCount);
+      newBread.SetPrice();
+      Assert.AreEqual(5, newBread.SetPrice());
+    }
   }
 }
