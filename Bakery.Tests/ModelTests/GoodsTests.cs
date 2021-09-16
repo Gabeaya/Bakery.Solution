@@ -39,5 +39,13 @@ namespace Bakery.Tests
       newBread.SetPrice();
       Assert.AreEqual(10, newBread.SetPrice());
     }
+    [TestMethod]
+    public void SetPrice_SetPriceWithAmountGreaterThanThree_Int()
+    {
+      int breadCount = 16;
+      Bread newBread = new Bread(breadCount);
+      newBread.SetPrice();
+      Assert.AreEqual(55, newBread.SetPrice());
+    }
   }
 }
