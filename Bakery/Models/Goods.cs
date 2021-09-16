@@ -36,6 +36,11 @@ namespace Bakery.Models
     }
     public int SetPrice()
     {
+      if(Amount >2)
+      {
+        Price = ((Amount /3)*5);
+        return Price;
+      }
       Price = Amount * 2;
       return Price;
     }
