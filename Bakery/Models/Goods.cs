@@ -3,46 +3,56 @@ namespace Bakery.Models
   public class Bread
   {
     //Properties
-    public int Amount { get; set; }
-    public int Price { get; set; }
+    public int BreadAmount { get; set; }
+    public int BreadPrice { get; set; }
 
     //constructor
     public Bread(int amount, int price = 0)
     {
-      Amount = amount;
-      Price = price;
+      BreadAmount = amount;
+      BreadPrice = price;
     }
     public int SetPrice()
     {
-      if (Amount >2)
+      if (BreadAmount >2)
       {
-        Price = ((Amount / 3) * 10)+((Amount % 3)*5);
-        return Price;
+        BreadPrice = ((BreadAmount / 3) * 10)+((BreadAmount % 3)*5);
+        return BreadPrice;
       }
-      Price = Amount * 5;
-      return Price;
+      BreadPrice = BreadAmount * 5;
+      return BreadPrice;
     }
   }
 
   public class Pastry
   {
-    public int Amount { get; set; }
-    public int Price { get; set; }
+    public int PastryAmount { get; set; }
+    public int PastryPrice { get; set; }
 
     public Pastry (int amount, int price=0)
     {
-      Amount = amount;
-      Price = price;
+      PastryAmount = amount;
+      PastryPrice = price;
     }
     public int SetPrice()
     {
-      if(Amount >2)
+      if(PastryAmount >2)
       {
-        Price = ((Amount / 3) * 5) + ((Amount % 3)*2);
-        return Price;
+        PastryPrice = ((PastryAmount / 3) * 5) + ((PastryAmount % 3)*2);
+        return PastryPrice;
       }
-      Price = Amount * 2;
-      return Price;
+      PastryPrice = PastryAmount * 2;
+      return PastryPrice;
     }
   }
+  public class OrderTotal
+  {
+    public static int CalculatedTotal(int BreadPrice, int PastryPrice)
+    {
+      int Total =  PastryPrice + BreadPrice;
+      return Total;
+    }
+  }
+
+
 }
