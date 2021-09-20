@@ -11,7 +11,7 @@ namespace Bakery
       Console.WriteLine("Bread is $5 each. Buy 2 Get 3rd free.");
       Console.WriteLine("Pastries are $2 each. Buy 2 Get 3rd for $1.");
       Console.WriteLine("-------------------------------------------");
-      Console.WriteLine("Would you like to purchase: type Bread or Pastry");
+      Console.WriteLine("What would you like to purchase: type Bread or Pastry");
       string userChoice = Console.ReadLine().ToLower();
 
       if (userChoice == "bread")
@@ -21,13 +21,13 @@ namespace Bakery
         int parsBreadAmount = int.Parse(breadAmount);
         Bread newBread = new Bread(parsBreadAmount);
         int breadPrice = newBread.SetPrice();
-        Console.WriteLine("Will that complete your order or would you like to purchase another good?(type complete/another)");
+        Console.WriteLine("Will that complete your order or would you like to purchase some pastries?(type complete/pastries)");
         string orderConfirm = Console.ReadLine().ToLower();
         if (orderConfirm == "complete")
         {
           Console.WriteLine("For " + parsBreadAmount + ", your total comes to $" + breadPrice + ".");
           Console.WriteLine("Thank you for your business <3");
-        } else if (orderConfirm == "another")
+        } else if (orderConfirm == "pastries")
         {
           Console.WriteLine("How many pastries?");
           string pastryAmount = Console.ReadLine();
@@ -48,6 +48,7 @@ namespace Bakery
         Pastry newPastry = new Pastry(parsPastryAmount);
         int pastryPrice = newPastry.SetPrice();
         Console.WriteLine("For " + parsPastryAmount + ", your total comes to $" + pastryPrice + ".");
+        Console.WriteLine("Thank you for your business <3");
       }
     }
   }
