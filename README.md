@@ -1,7 +1,7 @@
-# C# Template 
+# Pierres Bakery :pie:
 
 
-#### By Gabriel Ayala
+#### By Gabriel Ayala :technologist:
 
 ## Technologies Used :floppy_disk:
 * _NuGet Package Manager_
@@ -10,11 +10,11 @@
 * _MySQL_
 
 ## Description :page_with_curl:
-_A template that follows lesson 8(MSTest Configuration Quickj Reference)_
+_An application that prompts the user to enter an amount of bread and pastry they would like to purchase. The application will return the price given the amount of both._
 
 ## Setup/Installation Requirements :triangular_ruler:
 
-* _Clone github repo: https://github.com/Gabeaya/C--Template.git_
+* _Clone github repo: https://github.com/Gabeaya/Bakery.Solution_
 * _Navigate the directory: (cd top name directory)_
 * _Open in Vs code: code ._
 * _Run: dotnet restore Bakery.Tests_
